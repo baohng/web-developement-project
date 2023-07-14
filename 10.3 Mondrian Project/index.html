@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+      background-color: #000;
+    }
+    .grid-item {
+      background-color: aqua;
+    }
+    .red {
+      background-color: #E72F24;
+    }
+    .right-red {
+      grid-area: 1 / 2 / 2 / -1;
+      background-color: #F0F1EC;
+    }
+    .bottom-red {
+      grid-area: 2 / 1 / 4 / 2;
+      background-color: #F0F1EC;
+    }
+    .left-blue {
+      grid-area: 2 / 2 / 4 / -2;
+      background-color: #F0F1EC;
+    }
+    .blue {
+      background-color: #004592;
+    }
+    .bottom-blue {
+      grid-area: 3 / -2 / -1 / -1;
+      background-color: #F0F1EC;
+    }
+    .left-yellow {
+      background-color: #F0F1EC;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+    .black {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="grid-item red"></div>
+    <div class="grid-item right-red"></div>
+    <div class="grid-item blue"></div>
+    <div class="grid-item bottom-red"></div>
+    <div class="grid-item left-blue"></div>
+    <div class="grid-item bottom-blue"></div>
+    <div class="grid-item left-yellow"></div>
+    <div class="grid-item yellow"></div>
+    <div class="grid-item black"></div>
+    <div class="grid-item "></div>
+    <div class="grid-item "></div>
+    <div class="grid-item "></div>
+    <div class="grid-item "></div>
+  </div>
+</body>
+
+</html>
