@@ -5,4 +5,3 @@
     console.log(signal+=`#`);
   }
 })();
-console.log(`-----------------------`);
