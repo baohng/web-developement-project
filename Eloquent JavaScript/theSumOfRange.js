@@ -1,6 +1,6 @@
-function customRange(start, end) {
+function customRange(start, end, step = 1) {
   let arrRange = [];
-  for (let i = start; i <= end; i++) {
+  for (let i = start; i <= end; i += step) {
     arrRange.push(i);
   }
   return arrRange;
@@ -15,4 +15,4 @@ function customSum(rangeFunc) {
   return sum;
 }
 
-console.log(customSum(customRange(1,10)));
+console.log(customSum(customRange(1,10,2)));
